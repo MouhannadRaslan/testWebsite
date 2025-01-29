@@ -1,0 +1,59 @@
+section{
+    width: 100%;
+    display: flex;
+}
+.banner , .bannerImg{
+    height: 100vh;
+    width: 50%;
+}
+.bannerImg{
+    background: url('../assets/banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.banner{
+    background-color: #f5f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bannerContent{
+    display: block;
+    width: 65%;
+}
+.bannerSubTitle{
+    font-size: 1.25rem;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+}
+.bannerTitle{
+    font-size: 5rem;
+    font-family: sans-serif;
+    font-weight: 700;
+    color: #6e00fd;
+    text-transform: uppercase;
+    letter-spacing: normal;
+    margin-bottom: 30px;
+}
+.bannerPrg{
+    font-size: 1.25rem;
+    font-family: sans-serif;
+    font-style: italic;
+    font-weight: 100;
+    margin-bottom: 30px;
+}
+.bannerBtn{
+    text-decoration: none;
+    color: white;
+    background-color: #6e00fd;
+    padding: 13px 52px 13px 51px;
+    font-size: 1.125rem;
+    font-family: sans-serif;
+    font-weight: 700;
+}
+.bannerBtn:hover{
+    background-color: deeppink;
+}
