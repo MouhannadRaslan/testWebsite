@@ -1,59 +1,204 @@
-section{
+/* Banner start */
+.bannerSection {
+  width: 100%;
+  display: flex;
+}
+.banner,
+.bannerImg {
+  height: 100vh;
+  width: 50%;
+}
+.bannerImg {
+  background: url("../assets/banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.banner {
+  background-color: #f5f7fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bannerContent {
+  display: block;
+  width: 65%;
+}
+.bannerSubTitle {
+  font-size: 1.25rem;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 30px;
+}
+.bannerTitle {
+  font-size: 5rem;
+  font-family: sans-serif;
+  font-weight: 700;
+  color: #6e00fd;
+  text-transform: uppercase;
+  letter-spacing: normal;
+  margin-bottom: 30px;
+}
+.bannerPrg {
+  font-size: 1.25rem;
+  font-family: sans-serif;
+  font-style: italic;
+  font-weight: 100;
+  margin-bottom: 30px;
+}
+.bannerBtn {
+  text-decoration: none;
+  color: white;
+  background-color: #6e00fd;
+  padding: 13px 52px 13px 51px;
+  font-size: 1.125rem;
+  font-family: sans-serif;
+  font-weight: 700;
+}
+.bannerBtn:hover {
+  background-color: deeppink;
+}
+/* Banner end */
+
+/* boxes start */
+
+.boxes{
     width: 100%;
     display: flex;
+    justify-content: center;
+    padding: 50px;
+    margin-bottom: 60px;
 }
-.banner , .bannerImg{
-    height: 100vh;
-    width: 50%;
+
+
+.box1,
+.box2,
+.box3,
+.box4 {
+  height: 370px;
+  width: 280px;
+  margin: 5px;
+  text-align: center;
+  padding: 40px;
+  color: white;
 }
-.bannerImg{
-    background: url('../assets/banner.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+.box1{
+    background-color: #6e00fd;
 }
-.banner{
-    background-color: #f5f7fa;
+.box2{
+    background-color: #f79f26;
+}
+.box3{
+    background-color: #ff2263;
+}
+.box4{
+    background-color: #3fb7fe;
+}
+.boxHeader{
+    font-size: 1.5rem;
+    font-weight: 800;
+    font-family: sans-serif;
+    margin-bottom: 40px;
+}
+.boxPrg{
+    font-size: 1rem;
+    font-family: sans-serif ;
+    line-height: 2.2;
+}
+/* boxes end */
+/* section start */
+
+.section{
+    width: 100%;
+
+}
+.sectionRow1{
     display: flex;
     justify-content: center;
-    align-items: center;
 }
-.bannerContent{
-    display: block;
-    width: 65%;
+.sectionImg1{
+    width: 628px;
+    height: 513px;
+    background: url('../assets/fd.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
-.bannerSubTitle{
-    font-size: 1.25rem;
-    font-family: sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    margin-bottom: 30px;
+.rowContent1{
+    width: 528px;
+    height: 513px;
+    padding: 200px 70px;
 }
-.bannerTitle{
-    font-size: 5rem;
-    font-family: sans-serif;
+.rowContent1 h1{
+    font-size: 2.25rem;
+    line-height: 1.2;
     font-weight: 700;
-    color: #6e00fd;
-    text-transform: uppercase;
-    letter-spacing: normal;
-    margin-bottom: 30px;
-}
-.bannerPrg{
-    font-size: 1.25rem;
     font-family: sans-serif;
-    font-style: italic;
-    font-weight: 100;
     margin-bottom: 30px;
 }
-.bannerBtn{
+.rowContent1 p {
+    line-height: 2.2;
+    font-size: 1rem;
+    font-family: sans-serif;
+    margin-bottom: 30px;
+}
+.rowContent1 a{
     text-decoration: none;
-    color: white;
-    background-color: #6e00fd;
-    padding: 13px 52px 13px 51px;
-    font-size: 1.125rem;
-    font-family: sans-serif;
-    font-weight: 700;
+  color: white;
+  background-color: #6e00fd;
+  padding: 13px 52px 13px 51px;
+  font-size: 1.125rem;
+  font-family: sans-serif;
+  font-weight: 700;
 }
-.bannerBtn:hover{
+.rowContent1 a:hover{
     background-color: deeppink;
 }
+.sectionRow2{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+.rowContent2{
+    width: 528px;
+    height: 513px;
+}
+.rowContent2 h1{
+    font-size: 2.25rem;
+    line-height: 1.2;
+    font-weight: 700;
+    font-family: sans-serif;
+    margin-bottom: 30px;
+}
+.rowContent2 p {
+    line-height: 2.2;
+    font-size: 1rem;
+    font-family: sans-serif;
+    margin-bottom: 30px;
+}
+.rowContent2 a{
+    text-decoration: none;
+  color: white;
+  background-color: #6e00fd;
+  padding: 13px 52px 13px 51px;
+  font-size: 1.125rem;
+  font-family: sans-serif;
+  font-weight: 700;
+}
+.rowContent2 a:hover{
+    background-color: deeppink;
+}
+.sectionImg2{
+    width: 414px;
+    height: 449px;
+    background: url('../assets/vb.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    left: 50px;
+    bottom: 100px;
+}
+/* section end */
+
