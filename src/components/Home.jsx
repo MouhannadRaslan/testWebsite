@@ -1,4 +1,6 @@
 import HomeStyle from "./Home.module.css";
+import Contact from "./Contact";
+import Footer from "./Footer";
 
 function Home() {
   return (
@@ -87,6 +89,61 @@ function Home() {
       </section>
 
       {/* section end */}
+      {/* learning start */}
+      <section className={HomeStyle.learning}>
+        <div className={HomeStyle.learningContent}>
+          <h1>Never Stop Learning</h1>
+          <p>
+            Our vision is to be the source for childhood learning on the
+            internet vailable from anywhere for everyone and without charge.
+          </p>
+          <form action="">
+            <input type="email" placeholder="Enter a valid email address" />
+            <a href="#" type="submit">
+              SUBMIT
+            </a>
+          </form>
+        </div>
+      </section>
+      {/* learning end */}
+      {/* classes start */}
+      <section className={HomeStyle.classes}>
+        <div className={HomeStyle.classesContainer}>
+          <div className={HomeStyle.classesContent}>
+            <h1>Best Classes and Camps</h1>
+            <p>
+              Quam quisque id diam vel quam elementum. Vestibulum lectus mauris
+              ultrices eros in <br /> cursus turpis massa tincidunt. Pellentesque
+              habitant morbi tristique senectus et netus.
+            </p>
+          </div>
+        </div>
+        <div className={HomeStyle.classBoxRow1}>
+          <div className={HomeStyle.classImg1}>
+            <h1 className={HomeStyle.classBoxHeader}>One-of-a-kind Classes</h1>
+          </div>
+          <div className={HomeStyle.classImg2}>
+            <h1 className={HomeStyle.classBoxHeader}>Summer Camps</h1>
+          </div>
+          <div className={HomeStyle.classImg3}>
+            <h1 className={HomeStyle.classBoxHeader}>Sport Camps</h1>
+          </div>
+        </div>
+        <div className={HomeStyle.classBoxRow2}>
+          <div className={HomeStyle.classImg4}>
+            <h1 className={HomeStyle.classBoxHeader}>In-Person Camps</h1>
+          </div>
+          <div className={HomeStyle.classImg5}>
+            <h1 className={HomeStyle.classBoxHeader}>Anywhere Learning</h1>
+          </div>
+          <div className={HomeStyle.classImg6}>
+            <h1 className={HomeStyle.classBoxHeader}>About Us</h1>
+          </div>
+        </div>
+      </section>
+      {/* classes end */}
+      <Contact/>
+      <Footer/>
     </>
   );
 }
